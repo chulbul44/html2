@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment - Day 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .day {
+      background-color: #e91e63;
+    }
+    .handle {
+      background-color: #4caf50;
+    }
+    .tag {
+      background-color: #d9ecff;
+      color: #333;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 5px 0;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    input, textarea, button {
+      margin: 5px 0;
+      padding: 6px;
+      width: 100%;
+    }
+    canvas {
+      border: 1px solid black;
+      margin-top: 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <span class="badge day">Assignment - Day 5</span>
+    <span class="badge handle">@coding.stella</span>
+  </div>
+
+  <h2>Feedback Form</h2>
+
+  <div class="section">
+    <h3>Map of Mumbai, India</h3>
+    <iframe 
+      src="https://www.google.com/maps?q=Mumbai,+India&output=embed"
+      width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <div class="tag">&lt;iframe&gt; tag to display a map</div>
+  </div>
+
+  <div class="container section">
+    <div>
+      <h3>My Audio</h3>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="tag">&lt;audio&gt; tag</div>
+
+      <h3>Canvas</h3>
+      <canvas width="250" height="120"></canvas>
+      <div class="tag">&lt;canvas&gt; tag</div>
+    </div>
+
+    <div>
+      <h3>My Video</h3>
+      <video width="320" height="180" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="tag">&lt;video&gt; tag</div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="width: 50%;">
+      <h3>Feedback Form</h3>
+      <form>
+        Name:<br>
+        <input type="text" name="name"><br>
+        Email:<br>
+        <input type="email" name="email"><br>
+        Feedback:<br>
+        <textarea rows="4" name="feedback"></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="tag">&lt;textarea&gt; tag</div>
+      <div class="tag">&lt;button type="submit"&gt;Submit&lt;/button&gt;</div>
+    </div>
+
+    <div>
+      <h3>Emoji</h3>
+      <p>Here's an emoji: 😀</p>
+      <div class="tag">&#x1F603;</div>
+    </div>
+  </div>
+
+</body>
+</html>
